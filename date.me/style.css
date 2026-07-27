@@ -1,0 +1,565 @@
+/* =======================================
+   DATE WITH ME ❤️
+   STYLE.CSS
+======================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    overflow:hidden;
+
+    background:linear-gradient(
+        135deg,
+        #ff4d8d,
+        #b5179e,
+        #7209b7,
+        #3a0ca3
+    );
+
+    background-size:400% 400%;
+
+    animation:bgAnimation 15s ease infinite;
+
+    color:white;
+
+    width:100vw;
+    height:100vh;
+
+}
+
+/* ===================== */
+
+@keyframes bgAnimation{
+
+0%{
+
+background-position:0% 50%;
+
+}
+
+50%{
+
+background-position:100% 50%;
+
+}
+
+100%{
+
+background-position:0% 50%;
+
+}
+
+}
+
+/* ===================== */
+
+.screen{
+
+position:absolute;
+
+width:100%;
+height:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+opacity:0;
+
+visibility:hidden;
+
+transition:1s;
+
+padding:30px;
+
+}
+
+.screen.active{
+
+opacity:1;
+
+visibility:visible;
+
+}
+
+/* ===================== */
+
+.content{
+
+width:100%;
+
+max-width:900px;
+
+text-align:center;
+
+padding:50px;
+
+border-radius:35px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,255,255,.25);
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.35);
+
+}
+
+/* ===================== */
+
+h1{
+
+font-size:3rem;
+
+font-weight:700;
+
+margin-bottom:20px;
+
+line-height:1.2;
+
+}
+
+h2{
+
+font-size:2rem;
+
+margin-bottom:20px;
+
+}
+
+h3{
+
+font-size:1.5rem;
+
+margin-bottom:15px;
+
+font-weight:400;
+
+}
+
+p{
+
+font-size:1.1rem;
+
+line-height:1.8;
+
+margin-top:20px;
+
+opacity:.95;
+
+}
+
+/* ===================== */
+
+button{
+
+padding:18px 45px;
+
+margin-top:35px;
+
+border:none;
+
+outline:none;
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:600;
+
+border-radius:60px;
+
+background:white;
+
+color:#ff2d75;
+
+transition:.35s;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.25);
+
+}
+
+button:hover{
+
+transform:translateY(-6px) scale(1.05);
+
+box-shadow:
+
+0 20px 40px rgba(0,0,0,.35);
+
+}
+
+/* ===================== */
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:40px;
+
+margin-top:50px;
+
+flex-wrap:wrap;
+
+}
+
+/* ===================== */
+
+#yesBtn{
+
+background:#00d26a;
+
+color:white;
+
+font-size:22px;
+
+min-width:180px;
+
+}
+
+#yesBtn:hover{
+
+background:#00b85d;
+
+}
+
+/* ===================== */
+
+#noBtn{
+
+background:#ff355e;
+
+color:white;
+
+font-size:22px;
+
+min-width:180px;
+
+position:relative;
+
+}
+
+/* ===================== */
+
+.question{
+
+margin-top:40px;
+
+margin-bottom:20px;
+
+}
+
+/* ===================== */
+
+#typingText{
+
+font-family:'Pacifico',cursive;
+
+font-size:2rem;
+
+color:#ffe082;
+
+min-height:80px;
+
+}
+
+/* ===================== */
+
+.musicBtn{
+
+position:fixed;
+
+top:25px;
+
+right:25px;
+
+width:60px;
+
+height:60px;
+
+border-radius:50%;
+
+background:white;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:25px;
+
+cursor:pointer;
+
+color:#ff2d75;
+
+box-shadow:0 15px 30px rgba(0,0,0,.35);
+
+z-index:999;
+
+transition:.3s;
+
+}
+
+.musicBtn:hover{
+
+transform:scale(1.12);
+
+}
+
+/* ===================== */
+
+.letter{
+
+max-width:900px;
+
+padding:60px;
+
+background:white;
+
+color:#444;
+
+border-radius:25px;
+
+box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+line-height:2;
+
+text-align:center;
+
+}
+
+.letter h1{
+
+color:#ff2d75;
+
+font-family:'Pacifico',cursive;
+
+margin-bottom:35px;
+
+}
+
+/* ===================== */
+
+.formCard{
+
+width:100%;
+
+max-width:700px;
+
+padding:45px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+}
+
+.inputBox{
+
+display:flex;
+
+flex-direction:column;
+
+margin-bottom:25px;
+
+text-align:left;
+
+}
+
+.inputBox label{
+
+margin-bottom:10px;
+
+font-weight:600;
+
+}
+
+input,
+select{
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+/* ===================== */
+
+.ticket{
+
+background:white;
+
+color:#333;
+
+padding:60px;
+
+border-radius:30px;
+
+max-width:750px;
+
+text-align:center;
+
+box-shadow:0 30px 70px rgba(0,0,0,.35);
+
+}
+
+.ticket h2{
+
+color:#ff2d75;
+
+margin-bottom:30px;
+
+}
+
+.resume{
+
+margin:30px 0;
+
+}
+
+.resume p{
+
+font-size:20px;
+
+margin:12px 0;
+
+}
+
+/* ===================== */
+
+#funnyMessage{
+
+margin-top:30px;
+
+font-size:24px;
+
+font-weight:600;
+
+color:#ffe082;
+
+min-height:40px;
+
+}
+
+/* ===================== */
+
+.hearts{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+z-index:-1;
+
+}
+
+/* ===================== */
+
+@media(max-width:768px){
+
+.content{
+
+padding:30px;
+
+}
+
+h1{
+
+font-size:2rem;
+
+}
+
+h2{
+
+font-size:1.5rem;
+
+}
+
+p{
+
+font-size:1rem;
+
+}
+
+.buttons{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+.letter{
+
+padding:30px;
+
+}
+
+.ticket{
+
+padding:35px;
+
+}
+
+.formCard{
+
+padding:30px;
+
+}
+
+.musicBtn{
+
+width:50px;
+
+height:50px;
+
+font-size:20px;
+
+}
+
+}
